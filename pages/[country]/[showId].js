@@ -33,7 +33,7 @@ const ShowId = ({
 export const getServerSideProps = async ({ query: { showId } }) => {
   try {
     const response = await axios.get(
-      `http://api.tvmaze.com/shows/${showId}?embed=cast`
+      `https://api.tvmaze.com/shows/${showId}?embed=cast`
     );
 
     return {
