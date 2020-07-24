@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { setCookie } from 'nookies';
 
 import { countries } from './header.data';
 
@@ -13,6 +14,13 @@ const Header = () => {
     setSelectedCountry(value);
     router.push(`/[country]`, `/${value}`);
   };
+
+  useEffect(() => {
+    setCookie(null, 'defaultCountry', selectedCountry, {
+      maxAge: 30 * 24 * 60 * 60,
+      path: '/',
+    });
+  }, [selectedCountry]);
 
   return (
     <div className={styles.header}>

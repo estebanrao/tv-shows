@@ -2,6 +2,7 @@ dependencies:
   axios: 0.19.2
   html-react-parser: 0.13.0_react@16.13.1
   next: 9.4.4_01496e136432c9af3919b4448420472a
+  nookies: 2.3.2
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   sass: 1.26.10
@@ -2000,6 +2001,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4FJkXzKXEDB1snCFZlLP4gpC3JILicCpGbzG9f9G7tGqGCzETQ2hWPrcinA9oU4wtf2biUaEH5065UnMeR33oA==
+  /cookie/0.4.1:
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
   /copy-concurrently/1.0.5:
     dependencies:
       aproba: 1.2.0
@@ -3894,6 +3901,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-H3JrdUczbdiwxN5FuJPyCHnGHIFqQ0wWxo+9j1kAXAzqNMAHlo+4I/sYYxpyK0irQ73HgdiyzD32oqQDcU2Osw==
+  /nookies/2.3.2:
+    dependencies:
+      cookie: 0.4.1
+      set-cookie-parser: 2.4.6
+    dev: false
+    resolution:
+      integrity: sha512-iV0aRpJhpmf3Ri7q0tulK5epR8sYvYuifphVwSMlm/SIt0gVII+R6lSDYNgLJLFMCK+9gvJC6H87vSCA4CtKcA==
   /normalize-html-whitespace/1.0.0:
     dev: false
     engines:
@@ -5045,6 +5059,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JIJT1DGiWmIKhzRsG91aS6Ze4sFUrYbltlkg2onR5OrnNM02Kl/hnY/T4FN2omvyeBbQmMJv+K4cPOpGzOTFBg==
+  /set-cookie-parser/2.4.6:
+    dev: false
+    resolution:
+      integrity: sha512-mNCnTUF0OYPwYzSHbdRdCfNNHqrne+HS5tS5xNb6yJbdP9wInV0q5xPLE0EyfV/Q3tImo3y/OXpD8Jn0Jtnjrg==
   /set-value/2.0.1:
     dependencies:
       extend-shallow: 2.0.1
@@ -5837,6 +5855,7 @@ specifiers:
   axios: ^0.19.2
   html-react-parser: ^0.13.0
   next: 9.4.4
+  nookies: ^2.3.2
   react: 16.13.1
   react-dom: 16.13.1
   sass: ^1.26.10

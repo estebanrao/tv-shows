@@ -1,1 +1,3 @@
-export default () => <div>This is the about page</div>
+export default () => (
+  <div>Created by Esteban Rao (https://github.com/estebanrao)</div>
+);
